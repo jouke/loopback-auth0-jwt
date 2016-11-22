@@ -38,7 +38,7 @@ authentication mechanism, and the way it uses accessTokens.
 It is assuming you use the [Lock](https://auth0.com/docs/libraries/lock) that Auth0 provides, which is basically providing 
 the entire login process for you for Web, iOS and Android use. I personally use it in an Angular2 project, and I can tell you,
 it makes authentication Done Right very easy.
-The JWT (JSON Web Token) that Auth0 returns can be used as Bearer token in the 'Authoriztion' header of requests to your
+The JWT (JSON Web Token) that Auth0 returns can be used as Bearer token in the 'Authorization' header of requests to your
 Loopback API. If the user does not exist yet in Loopback, it is automatically created, and authenticated with your API.
 
 
