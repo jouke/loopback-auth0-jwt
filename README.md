@@ -3,9 +3,9 @@
   loopback-auth0-jwt is middleware for Loopback to use [Auth0](https://auth0.com/)'s [JWT](https://www.jwt.io) to [Loopback](https://loopback.io/) Users and accessTokens.
 
 ```js
+// load loopback-auth0-jwt module
 var auth0Jwt = require('loopback-auth0-jwt');
 
-// load loopback-auth0-jwt module
 var authConfig = {
   secretKey    : new Buffer(process.env['AUTH0_CLIENT_SECRET'], 'base64'),
   model        : 'Profile'
