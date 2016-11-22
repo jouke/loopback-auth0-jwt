@@ -1,31 +1,31 @@
 {
-  "name": "loopback-jwt",
+  "name": "loopback-auth0-jwt",
   "version": "1.0.0",
-  "description": "express middleware to map Json Web tokens with Loopback users",
+  "description": "Loopback middleware to use Auth0's JWT to Loopback Users and accessTokens",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whoGloo/loopback-jwt.git"
+    "url": "https://github.com/jouke/loopback-auth0-jwt.git"
   },
   "keywords": [
     "loopback",
     "strongloop",
-    "whogloo",
-    "nodespeed",
-    "jwt"
+    "jwt",
+    "auth0",
+    "authentication",
+    "middleware"
   ],
-  "author": "Julian Lyndon-Smith (julian@whogloo.io)",
+  "author": "Jouke Visser (jouke@studio-mv.nl)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whoGloo/loopback-jwt/issues"
+    "url": "https://github.com/jouke/loopback-auth0-jwt/issues"
   },
-  "homepage": "https://github.com/whoGloo/loopback-jwt#readme",
+  "homepage": "https://github.com/jouke/loopback-auth0-jwt#readme",
   "dependencies": {
     "bluebird": "^3.3.4",
-    "debug": "^2.2.0",
     "express-jwt": "^3.3.0",
     "uuid": "^2.0.1"
   }
