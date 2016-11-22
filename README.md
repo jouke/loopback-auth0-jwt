@@ -24,6 +24,7 @@ var auth = auth0Jwt(app, authConfig);
 
 app.use('/api', auth.authenticated);
 
+// optional
 app.get('/api/logout', auth.logout);
 
 app.use(errorHandler);
@@ -81,6 +82,8 @@ If a new user needs to be created, it will only set email and password. The latt
  
 The login process of Loopback assumes an accessToken instance to be created for the authenticated user. This is also handled, and the 
 ttl for the accessToken is set correctly so it matches the expiration of the JWT.
+
+
 
 ## Author
 
