@@ -7,8 +7,9 @@
 var auth0Jwt = require('loopback-auth0-jwt');
 
 var authConfig = {
-  secretKey    : new Buffer(process.env['AUTH0_CLIENT_SECRET'], 'base64'),
-  model        : 'Profile'
+  audienceAttr: '{YOUR-API-AUDIENCE-ATTRIBUTE}',
+  auth0Domain: '{YOUR-AUTH0-DOMAIN}',
+  model: 'Profile'
 };
 
 function errorHandler(err, req, res, next) {
@@ -55,9 +56,10 @@ $ npm install loopback-auth0-jwt --save
 
 `options` allows any options that are permitted to be passed to the loopback-auth0-jwt middleware
 
-
 options:
-- `secretKey` the key need to verify the jwt (required)
+
+- `audienceAttr` it's your configured domain in Auth0 API dashboard
+- `auth0Domain` it's the domain got from Auth0 for authentication, like `https://example.auth0.com` or your customized one
 - `model` the loopback model used for User maintenance (defaults to 'User', but you should really create your own user model that is uses User as a base model)
 - `identifier` the jwt claim to identify the user (defaults to 'email')
 - `password` the default password to use when creating loopback users (defaults to uuid.v4())
