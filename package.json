@@ -1,6 +1,6 @@
 {
   "name": "loopback-auth0-jwt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Loopback middleware to use Auth0's JWT to Loopback Users and accessTokens",
   "main": "lib/index.js",
   "scripts": {
